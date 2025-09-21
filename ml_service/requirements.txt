@@ -1,0 +1,3 @@
+fastapi
+uvicorn[standard]
+# later: torch, transformers, faiss-cpu, pillow, torchvision, ftfy, regex
