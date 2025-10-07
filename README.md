@@ -1,13 +1,31 @@
-## Anime Search & Recommendation (ASR, Image Search, Recommender)
-**Status:** 🚧 **In progress** (early prototype; endpoints and indices under active development)
+# Anime Search & Recommendation (Image Search & Recommender)
 
-**Overview.**  
-An experimental ML service where users upload a short **audio clip** or **screenshot** to find related anime scenes, with content-based recommendations. Demonstrates end-to-end retrieval: data prep → embeddings → vector search → API → UI.
+**Status:** 🚧 In progress (early prototype; endpoints and indices under active development)
 
-**Core capabilities (planned).**  
-ASR search (audio → transcript → subtitle match), image search (CLIP-style embeddings + FAISS), content-based recommendations first (light CF later), and latency levers (warm-up, batching, caching).
+## Overview
+This is an experimental ML service where users upload a **screenshot** to find related anime scenes, with content-based recommendations.  
+It demonstrates end-to-end retrieval: data preparation → embeddings → vector search → API → UI.  
 
-**Tech stack.** Next.js; FastAPI (Python); PyTorch / Hugging Face; FAISS (POC) → Milvus/Weaviate (scalable). Docker & GitHub Actions.
+> ⚠️ Note: This project uses only publicly available images or low-resolution screenshots for demonstration purposes to avoid copyright issues.  
 
-**Roadmap.**  
-Phase 1: subtitle index + text search → Phase 2: ASR integration → Phase 3: image embeddings + FAISS → Phase 4: recommendations → Phase 5: profiling & small deploy.
+## Core Capabilities (Planned)
+- **Image search:** CLIP-style embeddings + FAISS for similarity retrieval  
+- **Content-based recommendations:** Initially using item similarity; light collaborative filtering may be added later  
+- **Latency optimizations:** Warm-up, batching, caching  
+
+## Tech Stack
+- Frontend: Next.js  
+- Backend: FastAPI (Python)  
+- Machine Learning: PyTorch / Hugging Face  
+- Vector Search: FAISS (POC) → Milvus/Weaviate (for scalable deployment)  
+- DevOps: Docker & GitHub Actions  
+
+## Roadmap
+1. Subtitle index + text search  
+2. Image embeddings + FAISS search  
+3. Content-based recommendations  
+4. Profiling & small-scale deployment  
+
+## Project Scope
+This project is intended for **research and educational purposes**, demonstrating anime image retrieval and recommendation.  
+All media used are either publicly available or sourced with proper attribution. No copyrighted full episodes or audio are used.
